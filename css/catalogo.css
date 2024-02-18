@@ -1,0 +1,43 @@
+.cards{
+    display: grid;
+    gap:1rem;
+    grid-template-columns: repeat(3, minmax(1rem,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+    
+}
+
+.card{
+    
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+
+.contenedor{
+    
+    display: grid;
+    place-items: center center;
+    background-color: rgb(0, 0, 0);
+}
+.descripcion {
+	 color:  whitesmoke;
+	 padding:10px;
+ 	 font-family:'Times New Roman', Times, serif;
+	 font-size:1.8rem
+}
+
+.enlace {
+    position: absolute;
+    padding: 20px 5px;
+}
+
+ /* Styles for mobile screens */
+@media screen and (max-width: 800px) {
+	.cards{
+		display: grid;
+		gap:1rem;
+		grid-template-columns: repeat(1, minmax(15rem,1fr));
+		padding: 20px;
+		grid-gap: 40px;
+	}
+}

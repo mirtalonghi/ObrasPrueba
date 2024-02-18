@@ -1,0 +1,32 @@
+.firma {
+	width: 60%;
+}
+
+.detalle{
+	width: 60%;
+	font-size: 150%;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cards{
+    display: grid;
+    gap:1rem;
+    grid-template-columns: minmax(40rem,1fr) auto;
+    padding: 20px;
+    grid-gap: 40px;    
+}
+
+.card{
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+
+@media screen and (max-width: 1050px) {
+	.cards{
+		display: grid;
+		gap:1rem;
+		grid-template-columns: repeat( 1, minmax(40rem,1fr) );
+		padding: 20px;
+		grid-gap: 40px; 
+	}
+}

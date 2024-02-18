@@ -1,0 +1,21 @@
+.cards{
+    display: grid;
+    gap:1rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+}
+
+.card{
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+    background-color: transparent;
+    filter: alpha(opacity=70);
+    color: whitesmoke;
+}
+
+.card img {
+    width: 100%;
+    display:block;
+    border-radius:  20px 20px 0 0 ;
+}
